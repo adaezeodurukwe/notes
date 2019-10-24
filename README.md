@@ -1,2 +1,2 @@
 # NOTES
-todolist CRUD
+Notes CRUD
