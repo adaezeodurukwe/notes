@@ -18,7 +18,7 @@ Notes Api enables users to save important notes.
 - Node.js
 - Express framework
 
-### Api Endpoints
+### API Endpoints
 - GET `/api/v1/notes` - Gets all user notes
 - GET `/api/v1/notes/:id` - Gets a note by id
 - POST `/api/v1/notes` - Creates a note
