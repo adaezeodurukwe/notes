@@ -11,6 +11,7 @@ Notes Api enables users to save important notes.
 - Users can modify a note.
 - Users can get all personal notes.
 - Users can get a note.
+- Users can delete a note.
 
 # Built with
 - JavaScript
