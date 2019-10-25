@@ -6,7 +6,7 @@ Notes Api enables users to save important notes.
 
 # Features
 - Users can create an account.
-- Users can log in.
+- Users can sign in.
 - Users can create a note.
 - Users can modify a note.
 - Users can get all personal notes.
