@@ -4,7 +4,7 @@ Notes CRUD
 # Project Overview
 Notes Api enables users to save important notes.
 
-# Features
+## Features
 - Users can create an account.
 - Users can sign in.
 - Users can create a note.
@@ -13,12 +13,12 @@ Notes Api enables users to save important notes.
 - Users can get a note.
 - Users can delete a note.
 
-# Built with
+#### Built with
 - JavaScript
 - Node.js
 - Express framework
 
-# Api Endpoints
+#### Api Endpoints
 - GET `/api/v1/notes` - Gets all user notes
 - GET `/api/v1/notes/:id` - Gets a note by id
 - POST `/api/v1/notes` - Creates a note
@@ -27,14 +27,14 @@ Notes Api enables users to save important notes.
 - POST `/api/v1/auth/signup` - Signs up a new user
 - POST `/api/v1/auth/signin` - Logs a user in
 
-# Installation
+### Installation
 - $ git clone 'https://github.com/adaezeodurukwe/notes'
 - $ cd notes
 - $ npm i , to install dependencies
 - $ npm run createtable - to create required tables
 - $ npm start, to start the server Once the server starts-up, you can query the api at 'http://localhost:8000/api/v1' using the end points stated above.
 
-# Env Variables
+#### Env Variables
 - PORT 
 - DATABASE_URL
 - SECRET
