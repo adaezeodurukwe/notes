@@ -18,13 +18,13 @@ Notes Api enables users to save important notes.
 - Express framework
 
 # Api Endpoints
-- GET /api/v1/notes Gets all user notes
-- GET /api/v1/notes/:id Gets a note by id
-- POST /api/v1/notes Creates a note
-- PUT /api/v1/notes/:id - Updates a note
-- DELETE /api/v1/notes/:id - Deletes a note
-- POST /api/v1/auth/signup - Signs up a new user
-- POST /api/v1/auth/signin - Logs a user in
+- GET `/api/v1/notes` - Gets all user notes
+- GET `/api/v1/notes/:id` - Gets a note by id
+- POST `/api/v1/notes` - Creates a note
+- PUT `/api/v1/notes/:id` - Updates a note
+- DELETE `/api/v1/notes/:id` - Deletes a note
+- POST `/api/v1/auth/signup` - Signs up a new user
+- POST `/api/v1/auth/signin` - Logs a user in
 
 # Installation
 - $ git clone 'https://github.com/adaezeodurukwe/notes'
