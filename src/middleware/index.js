@@ -38,6 +38,26 @@ export default class MiddleWare {
         return next();
     }
 
+    static async validateCreateUserInput(req, res, next) {
+        const { name, email, password } =  req.body;
+
+        if (!(name || email || password)) {
+            return res.status(400).send({
+                status: 'bad request',
+                message: 'please include name, email and password'
+            });
+        }
+
+        if (!email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+            return res.status(400).send({
+                status: 'bad request',
+                message: 'invalid password format'
+            });
+        }
+
+        return next();
+    }
+
     static async validateUpdateInput(req, res, next) {
         const { title, note } =  req.body;
 

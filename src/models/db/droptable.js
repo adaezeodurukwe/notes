@@ -1,8 +1,10 @@
 import pool from './connect';
 
 const dropNotesTable = () => {
-    const data = 'DROP TABLE IF EXISTS notes';
-    pool.query(data);
+    const notesData = 'DROP TABLE IF EXISTS notes CASCADE';
+    const userData = 'DROP TABLE IF EXISTS users';
+    pool.query(notesData);
+    pool.query(userData);
 };
 
 dropNotesTable();

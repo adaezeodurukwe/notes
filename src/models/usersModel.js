@@ -19,6 +19,6 @@ export default class userModel {
         const value = [idOrEmail];
 
         const { rows } = await pool.query(sql, value);
-        return rows[0];
+        return rows;
     }
 }

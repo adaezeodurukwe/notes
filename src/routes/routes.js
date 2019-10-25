@@ -22,7 +22,7 @@ routes.put('/notes/:id', Auth, middleware.validateUpdateInput, middleware.getNot
 routes.delete('/notes/:id', Auth, middleware.getNote, notesController.deleteNote);
 
 // Create user
-routes.post('/auth/signup', userController.signUp);
+routes.post('/auth/signup', middleware.validateCreateUserInput, userController.signUp);
 
 // Login
 routes.post('/auth/signin', userController.signIn)

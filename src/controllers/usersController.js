@@ -12,9 +12,7 @@ export default class userController {
     static async signUp(req, res) {
         try {
             const { name, email, password } = req.body;
-            
             const user = await userModel.getOne(null, email);
-            
             if (user[0]) {
                 return res.status(409).send({
                     status: 409,
