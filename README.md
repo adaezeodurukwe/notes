@@ -32,9 +32,9 @@ Notes Api enables users to save important notes.
 - $ cd notes
 - $ npm i , to install dependencies
 - $ npm run createtable - to create required tables
-- $ npm start, to start the server Once the server starts-up, you can query the api at 'http://localhost:8000/api/v1' using the end points stated above.
+- $ npm start, to start the server Once the server starts-up, you can query the api at 'http://localhost:8000/' using the end points stated above.
 
 ### Env Variables
-- PORT 
+- PORT=8000
 - DATABASE_URL
 - SECRET
